@@ -7,9 +7,13 @@
 }
 
 .signIn_container{
-  padding: 16px;
-  font-size: 16px;
-  background-color: rgb(98, 98, 210);
-  border-radius: 32px;
-  width: 32vh;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 300px;
+    color: #ffff;
+    font-family: inherit;
 }
