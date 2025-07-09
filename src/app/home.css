@@ -1,5 +1,19 @@
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+}
+
+.signIn_container{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 300px;
+    color: #ffff;
+    font-family: inherit;
 }
