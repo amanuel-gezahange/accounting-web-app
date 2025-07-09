@@ -15,7 +15,9 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   },
   "description": "step 1 - should create a sign in and sign up page, must look kind of like this\r ![alt text](image.png) while disregarding \"sign In with google\"",
   "main": "index.js",

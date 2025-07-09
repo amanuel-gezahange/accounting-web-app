@@ -1,19 +1,73 @@
-.container {
+/* ========== Layout Container ========== */
+.homeContainer {
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full screen height */
+  height: 100vh;
+  padding: 20px;
 }
 
-.signIn_container{
-    background-color: #1877f2;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    line-height: 48px;
-    padding: 0 16px;
-    width: 300px;
-    color: #ffff;
-    font-family: inherit;
+/* ========== Shared Form Wrapper ========== */
+.signIn_Container {
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== Reusable Input Styling ========== */
+.customInput {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.customInput:focus {
+  border-color: #1877f2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.2);
+}
+
+/* ========== Reusable Button Styling ========== */
+.signInButton {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ========== Text & Link Styling ========== */
+.signIn_Container p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signIn_Container a,
+.signIn_Container button.bg-transparent {
+  color: #1877f2;
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.signIn_Container a:hover,
+.signIn_Container button.bg-transparent:hover {
+  text-decoration: underline;
 }
