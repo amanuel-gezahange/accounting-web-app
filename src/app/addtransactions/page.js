@@ -12,7 +12,7 @@ export default function AddTransaction() {
         <form className={styles.form}>
           <div className={styles.inputGroup}>
             <label htmlFor="date">Date</label>
-            <input type="date" id="date" defaultValue="2024-04-22" />
+            <input type="date" id="date" defaultValue="2025-07-10" />
           </div>
 
           <div className={styles.inputGroup}>
