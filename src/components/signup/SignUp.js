@@ -1,13 +1,18 @@
-'use client';
-import React, { useState } from 'react';
-import './home.css';
+"use client";
+import React from "react";
+import styles from "./SignUp.module.css";
 
-export default function Home() {
-  // Toggle between Sign In and Sign Up forms
-  const [isSignIn, setIsSignIn] = useState(true);
+export default function SignUp(){
+    return (
+        <h1>Sign Up</h1>
+    )
+}
+/**
+ * 
+ * 
+ * /*
 
-  return (
-    <div className="homeContainer bg-blue-50 min-h-screen flex items-center justify-center px-4">
+<div className="homeContainer bg-blue-50 min-h-screen flex items-center justify-center px-4">
       <div className="signIn_Container shadow-lg rounded-xl w-full max-w-md font-sans">
         {isSignIn ? (
           // ===== Sign In Form =====
@@ -88,5 +93,5 @@ export default function Home() {
         )}
       </div>
     </div>
-  );
-}
+ /*
+ */

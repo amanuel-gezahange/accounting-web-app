@@ -1,12 +1,3 @@
-/* ========== Layout Container ========== */
-.homeContainer {
-  background-color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
-}
 
 /* ========== Shared Form Wrapper ========== */
 .signIn_Container {
@@ -18,6 +9,21 @@
   max-width: 400px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.heading {
+  font-size: 0.875rem;     /* text-sm */
+  color: #6b7280;          /* text-gray-500 */
+  margin-bottom: 0.25rem;  /* mb-1 */
+}
+
+.title {
+  font-size: 1.5rem;         /* text-2xl */
+  font-weight: bold;         /* font-bold */
+  color: #1e3a8a;            /* text-blue-900 */
+  margin-bottom: 1.5rem;     /* mb-6 */
+}
+
+
 
 /* ========== Reusable Input Styling ========== */
 .customInput {

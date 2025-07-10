@@ -1,0 +1,42 @@
+
+.homeContainer {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 0.875rem;    
+  color: #6b7280;        
+  margin-bottom: 0.25rem; 
+}
+
+.title {
+  font-size: 1.5rem;        
+  font-weight: bold;        
+  color: #1e3a8a;          
+  margin-bottom: 1.5rem;
+}
+
+.linkText {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  color: #4b5563;
+}
+
+.linkButton {
+  color: #2563eb;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.linkButton:hover {
+  text-decoration: underline;
+}
