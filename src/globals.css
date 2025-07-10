@@ -1,1 +1,6 @@
+/* global.css */
 @import "tailwindcss";
+
+body {
+  background-color: #f9fafb; /* or any hex/RGB/HSL color */
+}

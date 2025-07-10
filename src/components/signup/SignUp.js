@@ -4,7 +4,7 @@ import styles from "./SignUp.module.css";
 
 export default function SignUp() {
   return (
-    <div className={styles.signUp_Container}>
+    <div>
       <h2 className={styles.heading}>Let’s get you started</h2>
       <h1 className={styles.title}>Create an account</h1>
       <form>
@@ -30,7 +30,7 @@ export default function SignUp() {
         />
         <button
           type="submit"
-          className={`${styles.signInButton} ${styles.transition}`}
+          className={`${styles.signUpButton} ${styles.transition}`}
         >
           Sign Up
         </button>
