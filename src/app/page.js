@@ -20,7 +20,15 @@ export default function Home() {
           </p>
         </div>
       ) : (
-        <SignUp />
+        <div>
+          <SignUp />
+          <p className={styles.linkText}>
+            Already have an account?{" "}
+            <button onClick={() => setIsSignIn(true)} className={styles.linkButton}>
+              Sign in
+            </button>
+          </p>
+        </div>
       )}
     </div>
   );
