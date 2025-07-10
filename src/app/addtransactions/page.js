@@ -4,6 +4,8 @@ import styles from './AddTransaction.module.css';
 import Navbar from '@/components/Navbar';
 
 export default function AddTransaction() {
+  const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
+
   return (
     <>
       <Navbar />
@@ -12,7 +14,7 @@ export default function AddTransaction() {
         <form className={styles.form}>
           <div className={styles.inputGroup}>
             <label htmlFor="date">Date</label>
-            <input type="date" id="date" defaultValue="2025-07-10" />
+            <input type="date" id="date" defaultValue={today} />
           </div>
 
           <div className={styles.inputGroup}>
