@@ -8,22 +8,36 @@ export default function Navbar({ activePage }) {
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li>
-          <Link href="/" className={activePage === "dashboard" ? styles.active : ""}>
+          <Link
+            href="/dashboard"
+            className={activePage === "dashboard" ? styles.active : ""}
+          >
             Dashboard
           </Link>
         </li>
         <li>
-          <Link href="/addtransactions" className={activePage === "add" ? styles.active : ""}>
+          <Link
+            href="/addtransactions"
+            className={activePage === "addtransactions" ? styles.active : ""}
+          >
             Add Transaction
           </Link>
         </li>
         <li>
-          <Link href="/debts" className={activePage === "debts" ? styles.active : ""}>
+          <Link
+            href="/debts"
+            className={activePage === "debts" ? styles.active : ""}
+          >
             Debts
           </Link>
         </li>
-        <li className={styles.hiddenLink}>
-          <Link href="/export">Export Data</Link>
+        <li>
+          <Link
+            href="/export"
+            className={activePage === "export" ? styles.active : ""}
+          >
+            Export Data
+          </Link>
         </li>
       </ul>
     </nav>

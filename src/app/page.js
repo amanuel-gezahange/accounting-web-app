@@ -14,7 +14,10 @@ export default function Home() {
           <SignIn />
           <p className={styles.linkText}>
             Don’t have an account?{" "}
-            <button onClick={() => setIsSignIn(false)} className={styles.linkButton}>
+            <button
+              onClick={() => setIsSignIn(false)}
+              className={styles.linkButton}
+            >
               Sign up
             </button>
           </p>
@@ -24,7 +27,10 @@ export default function Home() {
           <SignUp />
           <p className={styles.linkText}>
             Already have an account?{" "}
-            <button onClick={() => setIsSignIn(true)} className={styles.linkButton}>
+            <button
+              onClick={() => setIsSignIn(true)}
+              className={styles.linkButton}
+            >
               Sign in
             </button>
           </p>

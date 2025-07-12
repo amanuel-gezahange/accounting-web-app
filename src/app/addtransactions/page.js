@@ -1,14 +1,11 @@
 'use client';
 import React from 'react';
 import styles from './AddTransaction.module.css';
-import Navbar from '@/components/Navbar';
 
 export default function AddTransaction() {
   const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
-
   return (
-    <>
-      <Navbar />
+    <> 
       <main className={styles.container}>
         <h1 className={styles.heading}>Add Transaction</h1>
         <form className={styles.form}>
