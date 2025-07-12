@@ -1,59 +1,84 @@
-.signIn_Container {
-  background-color: white;
-  padding: 32px;
-  border-radius: 12px;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+.signInContainer {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+  margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .heading {
-  font-size: 0.875rem;    
-  color: #6b7280;         
-  margin-bottom: 0.25rem;  
+  font-size: 0.95rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 0.25rem;
 }
 
 .title {
-  font-size: 1.5rem;     
-  font-weight: bold;       
-  color: #1e3a8a;          
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .customInput {
   display: block;
   width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  transition: border 0.3s ease;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
 .customInput:focus {
-  border-color: #1877f2;
+  border-color: #2563eb;
+  background-color: white;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
 .signInButton {
-  background-color: #1877f2;
+  background-color: #2563eb;
   color: white;
   border: none;
-  padding: 14px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
   width: 100%;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
   cursor: pointer;
-}
-
-/* Optional: smooth color transition for hover */
-.transition {
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .signInButton:hover {
-  background-color: #165acb; /* darker blue */
+  background-color: #1e40af;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 500px) {
+  .signInContainer {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .customInput {
+    padding: 0.75rem;
+  }
+
+  .signInButton {
+    padding: 0.75rem;
+  }
 }

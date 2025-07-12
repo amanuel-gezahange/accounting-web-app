@@ -1,47 +1,47 @@
 .homeContainer {
   background-color: #f9fafb;
-  padding: 32px;
-  border-radius: 12px;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.heading {
-  font-size: 0.875rem;    
-  color: #6b7280;        
-  margin-bottom: 0.25rem; 
-}
-
-.title {
-  font-size: 1.5rem;        
-  font-weight: bold;        
-  color: #1e3a8a;          
-  margin-bottom: 1.5rem;
+  margin: 4rem auto;
 }
 
 .linkText {
   text-align: center;
-  font-size: 0.875rem;
-  margin-top: 1rem;
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
   color: #4b5563;
 }
 
 .linkButton {
   color: #2563eb;
-  font-weight: 500;
+  font-weight: 600;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 .linkButton:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .homeContainer {
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 95%;
+  }
+
+  .linkText {
+    font-size: 0.85rem;
+  }
+
+  .linkButton {
+    font-size: 0.85rem;
+  }
 }
