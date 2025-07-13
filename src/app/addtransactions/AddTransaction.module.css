@@ -1,17 +1,17 @@
 .container {
-  max-width: 600px;
-  margin: 40px auto;
   padding: 32px;
-  background: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .heading {
-  font-size: 1.875rem; /* text-3xl */
-  font-weight: 700;
-  color: #1e293b; /* slate-800 */
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e3a8a;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -19,7 +19,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .inputGroup {
@@ -27,60 +27,37 @@
   flex-direction: column;
 }
 
-.inputGroup label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #475569; /* slate-600 */
-  margin-bottom: 6px;
+.label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
 }
 
-.inputGroup input[type="text"],
-.inputGroup input[type="number"],
-.inputGroup input[type="date"] {
+.input {
   padding: 12px;
-  border: 1px solid #cbd5e1; /* slate-300 */
+  border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 1rem;
-  transition: border 0.3s ease;
-}
-
-.inputGroup input:focus {
-  border-color: #2563eb; /* blue-600 */
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
 .radioGroup {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   margin-top: 4px;
 }
 
-.radioGroup label {
-  font-size: 0.95rem;
-  color: #334155; /* slate-700 */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .submit {
-  background-color: #1877f2;
+  background-color: #2563eb;
   color: white;
   border: none;
   padding: 14px;
-  width: 100%;
   border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-}
-
-/* Optional: smooth color transition for hover */
-.submit {
   transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-  background-color: #165acb; /* darker blue */
+  background-color: #1e40af;
 }
