@@ -2,9 +2,9 @@ import React from 'react'
 
 function page() {
   return (
-    <div>
+    <center>
       export
-    </div>
+    </center>
   )
 }
 
