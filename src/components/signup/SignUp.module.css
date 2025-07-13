@@ -1,14 +1,26 @@
+.signUp_Container {
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .heading {
-  font-size: 0.875rem;    
-  color: #6b7280;         
-  margin-bottom: 0.25rem;  
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 .title {
-  font-size: 1.5rem;     
-  font-weight: bold;       
-  color: #1e3a8a;          
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .customInput {
@@ -39,11 +51,10 @@
   cursor: pointer;
 }
 
-/* Optional: smooth color transition for hover */
 .transition {
   transition: background-color 0.3s ease;
 }
 
 .signUpButton:hover {
-  background-color: #165acb; /* darker blue */
+  background-color: #165acb;
 }

@@ -1,12 +1,18 @@
-"use client";
-import { useRouter } from "next/navigation";
+'use client'
+import React from 'react'
+import styles from './Back.module.css'
+import { useRouter } from 'next/navigation'
 
-export default function BackButton() {
-  const router = useRouter();
+export default function Back() {
+  const router = useRouter()
+
+  const handleClick = () => {
+    router.back()
+  }
 
   return (
-    <button onClick={() => router.back()}>
-      Go Back
+    <button className={styles.backButton} onClick={handleClick}>
+      ← Back
     </button>
-  );
+  )
 }
