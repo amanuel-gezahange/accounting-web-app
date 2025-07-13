@@ -1,18 +1,18 @@
 .container {
   max-width: 600px;
   margin: 40px auto;
+  background-color: white;
   padding: 32px;
-  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .heading {
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.8rem;
   font-weight: 700;
-  color: #1e293b; /* slate-800 */
-  margin-bottom: 24px;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -27,60 +27,79 @@
   flex-direction: column;
 }
 
-.inputGroup label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #475569; /* slate-600 */
-  margin-bottom: 6px;
+.label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #374151;
 }
 
-.inputGroup input[type="text"],
-.inputGroup input[type="number"],
-.inputGroup input[type="date"] {
-  padding: 12px;
-  border: 1px solid #cbd5e1; /* slate-300 */
+.input {
+  padding: 14px;
   border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
   font-size: 1rem;
-  transition: border 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.inputGroup input:focus {
-  border-color: #2563eb; /* blue-600 */
+.input:focus {
+  border-color: #2563eb;
+  background-color: white;
   outline: none;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
 .radioGroup {
   display: flex;
   gap: 20px;
-  margin-top: 4px;
 }
 
-.radioGroup label {
-  font-size: 0.95rem;
-  color: #334155; /* slate-700 */
+.radioLabel {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 1rem;
+  color: #374151;
 }
 
 .submit {
-  background-color: #1877f2;
+  background-color: #1e3a8a;
   color: white;
   border: none;
   padding: 14px;
-  width: 100%;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
   cursor: pointer;
-}
-
-/* Optional: smooth color transition for hover */
-.submit {
   transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-  background-color: #165acb; /* darker blue */
+  background-color: #1e40af;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .radioGroup {
+    flex-direction: column;
+  }
+}
+.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
