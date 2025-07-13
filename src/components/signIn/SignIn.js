@@ -1,18 +1,18 @@
-'use client'
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 // import axios from 'axios'
-import styles from './SignIn.module.css'
+import styles from "./SignIn.module.css";
 
 export default function SignInForm() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const router = useRouter()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
 
   const handleSignIn = async (e) => {
-    e.preventDefault()
-    router.push('/addtransactions')
-  }
+    e.preventDefault();
+    router.push(`/addtransactions?isLoggedIn=true`);
+  };
 
   return (
     <form onSubmit={handleSignIn}>
@@ -37,5 +37,5 @@ export default function SignInForm() {
         Sign In
       </button>
     </form>
-  )
+  );
 }
